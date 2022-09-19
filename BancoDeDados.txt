@@ -1,0 +1,17 @@
+CREATE TABLE Usuarios (
+    idUsuario SERIAL,
+    nome VARCHAR(250),
+    senha VARCHAR(150),
+    PRIMARY KEY (idUsuario)
+);
+
+CREATE TABLE Receitas (
+    idReceita SERIAL,
+    nomeReceita VARCHAR(250),
+    descricao TEXT,
+    ingredientes TEXT,
+    instrucoes TEXT,
+    idUsuario INT,
+    PRIMARY KEY (idReceita),
+    FOREIGN KEY (idUsuario) REFERENCES Usuarios(idUsuario)
+);

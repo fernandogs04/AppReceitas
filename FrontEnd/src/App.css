@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --fonte: 'Roboto', sans-serif;
+    --cor60: #242423;
+    --cor30: #333533;
+    --cor10: #f5cb5c;
+    --branco: #E8EDDF;
+    --cinza: #CFDBD5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor60);
+    color: white;
+    font-family: var(--fonte);
+    font-weight: 500;
+}
